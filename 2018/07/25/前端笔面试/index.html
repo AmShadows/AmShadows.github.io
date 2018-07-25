@@ -111,14 +111,14 @@
   <meta name="description" content="我什么时候能够像你们这么优秀">
 <meta name="keywords" content="我什么时候能够像你们这么优秀">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo优化">
-<meta property="og:url" content="http://yoursite.com/2018/07/25/hexo优化/index.html">
+<meta property="og:title" content="前端笔面试">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/前端笔面试/index.html">
 <meta property="og:site_name" content="AmShadows">
 <meta property="og:description" content="我什么时候能够像你们这么优秀">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-25T08:28:14.799Z">
+<meta property="og:updated_time" content="2018-07-25T09:20:12.024Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo优化">
+<meta name="twitter:title" content="前端笔面试">
 <meta name="twitter:description" content="我什么时候能够像你们这么优秀">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/25/hexo优化/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/25/前端笔面试/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>hexo优化 | AmShadows</title>
+  <title>前端笔面试 | AmShadows</title>
   
 
 
@@ -310,7 +310,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/hexo优化/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/前端笔面试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="AM">
@@ -327,7 +327,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo优化
+          <h1 class="post-title" itemprop="name headline">前端笔面试
               
             
           </h1>
@@ -352,9 +352,13 @@
                 
               
 
-              <time title="创建时间：2018-07-25 16:28:14" itemprop="dateCreated datePublished" datetime="2018-07-25T16:28:14+08:00">2018-07-25</time>
+              <time title="创建时间：2018-07-25 17:20:11 / 修改时间：17:20:12" itemprop="dateCreated datePublished" datetime="2018-07-25T17:20:11+08:00">2018-07-25</time>
             
 			
+            
+              
+
+              
             
           </span>
 
@@ -372,7 +376,7 @@
 
 		  
 			&nbsp; | &nbsp;
-			<span id="/2018/07/25/hexo优化/"class="leancloud_visitors" data-flag-title="hexo优化">&nbsp;阅读次数
+			<span id="/2018/07/25/前端笔面试/"class="leancloud_visitors" data-flag-title="前端笔面试">&nbsp;阅读次数
 			  <span class="leancloud-visitors-count"></span>
 			</span>
 			
@@ -420,8 +424,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/15/kali破解wifi密码/" rel="next" title="kali破解wifi密码">
-                <i class="fa fa-chevron-left"></i> kali破解wifi密码
+              <a href="/2018/07/25/hexo-LeanCloud添加文章阅读次数/" rel="next" title="hexo-LeanCloud添加文章阅读次数">
+                <i class="fa fa-chevron-left"></i> hexo-LeanCloud添加文章阅读次数
               </a>
             
           </div>
@@ -497,7 +501,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -683,7 +687,7 @@ show_date_time();
 
 <div class="theme-info">
   <span class="post-meta-divider">|</span>
-  <span class="post-count">博客全站共687字</span>
+  <span class="post-count">博客全站共818字</span>
 </div>
 
         
@@ -935,7 +939,7 @@ show_date_time();
 
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
   <script>AV.initialize("2gX6VMQXHHQfldvKVGHiDbOR-gzGzoHsz", "IibQPapfOSkY3svTXIYC3i5U");</script>
   <script>
     function showTime(Counter) {
@@ -964,14 +968,6 @@ show_date_time();
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
           }
         })
         .fail(function (object, error) {
@@ -1003,12 +999,6 @@ show_date_time();
             });
           } else {
             var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);

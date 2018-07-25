@@ -329,7 +329,7 @@
         
           
         
-        嗯..! 目前共计 9 篇日志。 继续努力。
+        嗯..! 目前共计 10 篇日志。 继续努力。
       </span>
       
 
@@ -354,9 +354,46 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/07/25/hexo优化/" itemprop="url">
+            <a class="post-title-link" href="/2018/07/25/前端笔面试/" itemprop="url">
               
-                <span itemprop="name">hexo优化</span>
+                <span itemprop="name">前端笔面试</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-07-25T17:20:11+08:00"
+              content="2018-07-25" >
+          07-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2018/07/25/hexo-LeanCloud添加文章阅读次数/" itemprop="url">
+              
+                <span itemprop="name">hexo-LeanCloud添加文章阅读次数</span>
               
             </a>
         
@@ -614,7 +651,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -800,7 +837,7 @@ show_date_time();
 
 <div class="theme-info">
   <span class="post-meta-divider">|</span>
-  <span class="post-count">博客全站共687字</span>
+  <span class="post-count">博客全站共818字</span>
 </div>
 
         
@@ -1048,7 +1085,7 @@ show_date_time();
 
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
   <script>AV.initialize("2gX6VMQXHHQfldvKVGHiDbOR-gzGzoHsz", "IibQPapfOSkY3svTXIYC3i5U");</script>
   <script>
     function showTime(Counter) {
@@ -1077,14 +1114,6 @@ show_date_time();
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
           }
         })
         .fail(function (object, error) {
@@ -1116,12 +1145,6 @@ show_date_time();
             });
           } else {
             var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
